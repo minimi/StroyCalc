@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">StroyCalc</string>
+
+    <string name="title_calculators">Калькуляторы</string>
+    <string name="title_about">О программе</string>
+
+    <string name="title_laminateCalc">Расчёт пола</string>
+    <string name="title_concreteCalc">Расчёт бетона</string>
+    <string name="title_foamBlockCalc">Расчёт пеноблоков</string>
+
+    <string name="room_length">Длинна помещения</string>
+    <string name="room_width">Ширина помещения</string>
+
+    <string name="laying_direct">Прямая укладка</string>
+    <string name="laying_diagonal">Диагональная укладка</string>
+    <string name="area_per_pack">Площадь в упаковке</string>
+    <string name="packs_quantity">Количество упаковок</string>
+
+</resources>
