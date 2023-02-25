@@ -41,7 +41,7 @@ fun FoamBlockCalcScreen(
     onBackClick: () -> Unit,
     predefinedOptions: List<BlockSize>,
     calculationResult: CalculationState,
-    calculate: (length: String, heigth: String, doorsAndWindowsSquare: String, blockSize: BlockSize) -> Unit,
+    calculate: (length: String, height: String, doorsAndWindowsSquare: String, blockSize: BlockSize) -> Unit,
     clear: () -> Unit,
 ) {
     var length by remember { mutableStateOf("") }
