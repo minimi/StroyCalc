@@ -6,6 +6,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.github.minimi.stroycalc.feature.calculatorsList.navigation.calculatorsListNavigationRoute
 import com.github.minimi.stroycalc.feature.calculatorsList.navigation.calculatorsListScreen
+import com.github.minimi.stroycalc.feature.concreteCalc.navigation.concreteCalcNavigationRoute
+import com.github.minimi.stroycalc.feature.concreteCalc.navigation.concreteCalcScreen
+import com.github.minimi.stroycalc.feature.concreteCalc.navigation.navigateToConcreteCalc
 import com.github.minimi.stroycalc.feature.foamBlockCalc.navigation.foamBlockCalcNavigationRoute
 import com.github.minimi.stroycalc.feature.foamBlockCalc.navigation.foamBlockCalcScreen
 import com.github.minimi.stroycalc.feature.foamBlockCalc.navigation.navigateToFoamBlockCalc
@@ -25,16 +28,21 @@ fun StroyAppNavHost(
         startDestination = startDestination,
         modifier = modifier,
     ) {
-        calculatorsListScreen(onNavigateTo = { route ->
-            when (route) {
-                laminateCalcNavigationRoute -> navController.navigateToLaminateCalc()
-                foamBlockCalcNavigationRoute -> navController.navigateToFoamBlockCalc()
-                else -> {}
+        calculatorsListScreen(
+            onNavigateTo = { route ->
+                when (route) {
+                    laminateCalcNavigationRoute -> navController.navigateToLaminateCalc()
+                    foamBlockCalcNavigationRoute -> navController.navigateToFoamBlockCalc()
+                    concreteCalcNavigationRoute -> navController.navigateToConcreteCalc()
+                    else -> {}
+                }
             }
-        })
+        )
 
         laminateCalcScreen(onBackClick)
 
         foamBlockCalcScreen(onBackClick)
+
+        concreteCalcScreen(onBackClick)
     }
 }

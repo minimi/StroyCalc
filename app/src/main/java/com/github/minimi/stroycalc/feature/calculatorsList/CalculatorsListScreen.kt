@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.github.minimi.stroycalc.designsystem.theme.StroyCalcTheme
+import com.github.minimi.stroycalc.feature.concreteCalc.navigation.concreteCalcNavigationRoute
 import com.github.minimi.stroycalc.feature.foamBlockCalc.navigation.foamBlockCalcNavigationRoute
 import com.github.minimi.stroycalc.feature.laminateCalc.navigation.laminateCalcNavigationRoute
 
@@ -36,13 +37,13 @@ fun CalculatorsListScreen(
         )
 
         Divider()
-//
-//        CalculatorItem(
-//            title = "Калькулятор бетона",
-//            description = "Рассчет смеси для бетона",
-//            onClick = { onNavigateTo("") }
-//        )
-//        Divider()
+
+        CalculatorItem(
+            title = "Калькулятор бетона",
+            description = "Рассчет смеси для бетона",
+            onClick = { onNavigateTo(concreteCalcNavigationRoute) }
+        )
+        Divider()
 
         CalculatorItem(
             title = "Калькулятор пеноблоков",
