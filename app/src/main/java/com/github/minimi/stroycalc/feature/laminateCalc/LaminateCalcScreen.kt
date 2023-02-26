@@ -7,6 +7,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
@@ -69,10 +70,11 @@ fun LaminateCalcScreen(
     calculate: (width: String, length: String, layoutType: LayoutType, squareInPack: String) -> Unit,
     clear: () -> Unit,
 ) {
-    var width by remember { mutableStateOf("") }
-    var length by remember { mutableStateOf("") }
-    var squareInPack by remember { mutableStateOf("") }
-    var layoutType by remember { mutableStateOf(LayoutType.DIRECT) }
+
+    var width by rememberSaveable { mutableStateOf("") }
+    var length by rememberSaveable { mutableStateOf("") }
+    var squareInPack by rememberSaveable { mutableStateOf("") }
+    var layoutType by rememberSaveable { mutableStateOf(LayoutType.DIRECT) }
 
     Column(
         modifier = modifier

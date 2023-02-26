@@ -6,6 +6,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.ImeAction
@@ -44,10 +45,10 @@ fun FoamBlockCalcScreen(
     calculate: (length: String, height: String, doorsAndWindowsSquare: String, blockSize: BlockSize) -> Unit,
     clear: () -> Unit,
 ) {
-    var length by remember { mutableStateOf("") }
-    var heigth by remember { mutableStateOf("") }
-    var blockSize by remember { mutableStateOf(predefinedOptions[0]) }
-    var doorsAndWindowsSquare by remember { mutableStateOf("") }
+    var length by rememberSaveable { mutableStateOf("") }
+    var heigth by rememberSaveable { mutableStateOf("") }
+    var blockSize by rememberSaveable { mutableStateOf(predefinedOptions[0]) }
+    var doorsAndWindowsSquare by rememberSaveable { mutableStateOf("") }
 
     Column(
         modifier = modifier
