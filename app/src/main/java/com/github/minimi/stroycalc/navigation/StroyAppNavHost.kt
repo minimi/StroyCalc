@@ -15,6 +15,9 @@ import com.github.minimi.stroycalc.feature.foamBlockCalc.navigation.navigateToFo
 import com.github.minimi.stroycalc.feature.laminateCalc.navigation.laminateCalcNavigationRoute
 import com.github.minimi.stroycalc.feature.laminateCalc.navigation.laminateCalcScreen
 import com.github.minimi.stroycalc.feature.laminateCalc.navigation.navigateToLaminateCalc
+import com.github.minimi.stroycalc.feature.wallpaperCalc.navigation.navigateToWallpaperCalc
+import com.github.minimi.stroycalc.feature.wallpaperCalc.navigation.wallpaperCalcNavigationRoute
+import com.github.minimi.stroycalc.feature.wallpaperCalc.navigation.wallpaperCalcScreen
 
 @Composable
 fun StroyAppNavHost(
@@ -34,6 +37,7 @@ fun StroyAppNavHost(
                     laminateCalcNavigationRoute -> navController.navigateToLaminateCalc()
                     foamBlockCalcNavigationRoute -> navController.navigateToFoamBlockCalc()
                     concreteCalcNavigationRoute -> navController.navigateToConcreteCalc()
+                    wallpaperCalcNavigationRoute -> navController.navigateToWallpaperCalc()
                     else -> {}
                 }
             }
@@ -44,5 +48,7 @@ fun StroyAppNavHost(
         foamBlockCalcScreen(onBackClick)
 
         concreteCalcScreen(onBackClick)
+
+        wallpaperCalcScreen(onBackClick)
     }
 }

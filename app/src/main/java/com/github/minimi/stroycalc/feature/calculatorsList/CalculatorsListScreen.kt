@@ -13,6 +13,7 @@ import com.github.minimi.stroycalc.designsystem.theme.StroyCalcTheme
 import com.github.minimi.stroycalc.feature.concreteCalc.navigation.concreteCalcNavigationRoute
 import com.github.minimi.stroycalc.feature.foamBlockCalc.navigation.foamBlockCalcNavigationRoute
 import com.github.minimi.stroycalc.feature.laminateCalc.navigation.laminateCalcNavigationRoute
+import com.github.minimi.stroycalc.feature.wallpaperCalc.navigation.wallpaperCalcNavigationRoute
 
 @Composable
 fun CalculatorsListRoute(
@@ -49,6 +50,13 @@ fun CalculatorsListScreen(
             title = "Калькулятор пеноблоков",
             description = "Рассчет количества пеноблоков",
             onClick = { onNavigateTo(foamBlockCalcNavigationRoute) }
+        )
+        Divider()
+
+        CalculatorItem(
+            title = "Калькулятор обоев",
+            description = "Рассчет количества обоев",
+            onClick = { onNavigateTo(wallpaperCalcNavigationRoute) }
         )
         Divider()
 

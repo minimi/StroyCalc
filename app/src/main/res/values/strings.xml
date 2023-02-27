@@ -16,4 +16,37 @@
     <string name="area_per_pack">Площадь в упаковке</string>
     <string name="packs_quantity">Количество упаковок</string>
 
+    <string name="label_calculate">Рассчитать</string>
+
+    <string name="label_room_parameters">Параметры помещения</string>
+    <string name="label_room_width">Ширина помещения</string>
+    <string name="label_room_length">Длинна помещения</string>
+    <string name="label_room_height">Высота помещения</string>
+
+    <string name="label_door_parameters">Параметры дверей</string>
+    <string name="label_doors_quantity">Количество дверей</string>
+    <string name="label_door_width">Ширина двери</string>
+    <string name="label_door_height">Высота двери</string>
+
+    <string name="label_window_parameters">Параметры окон</string>
+    <string name="label_windows_quantity">Количество окон</string>
+    <string name="label_window_width">Ширина окна</string>
+    <string name="label_window_height">Высота окна</string>
+
+    <string name="label_wallpaper_parameters">Параметры обоев</string>
+    <string name="label_wallpaper_roll_length">Длинна рулона</string>
+    <string name="label_wallpaper_width">Ширина обоев</string>
+    <string name="label_wallpaper_rapport">Раппорт рисунка</string>
+    <string name="label_wallpaper_shifted_pattern">Сдвинутый рисунок</string>
+    <string name="label_leveling_margin">Запас на выравнивание</string>
+
+    <string name="label_totalWallpapersLength">Количество обоев</string>
+    <string name="label_totalWallpaperRolls">Количество рулонов</string>
+
+    <string name="suffix_item">шт</string>
+    <string name="suffix_centimeters">см</string>
+    <string name="suffix_meters">м</string>
+    <string name="suffix_cubic_meter">м³</string>
+    <string name="suffix_squared_meter">м²</string>
+    <string name="suffix_running_meter">п.м.</string>
 </resources>
